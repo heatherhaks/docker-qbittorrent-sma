@@ -20,5 +20,6 @@ pip install --upgrade 'subliminal<2'
 pip install --upgrade qtfaststart
 pip install --upgrade python-qbittorrent
 pip install --upgrade gevent
+pip install --upgrade tmdbsimple
 pip uninstall --yes stevedore
 pip install stevedore==1.19.1
