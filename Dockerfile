@@ -24,10 +24,6 @@ RUN pip install gevent
 RUN pip install python-qbittorrent
 RUN pip install tmdbsimple
 RUN pip install mutagen
-RUN git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git mp4automator
-
-#Set script file permissions
-RUN chmod 775 -R /mp4automator
 
 #Adding Custom files
 ADD init/ /etc/cont-init.d/
