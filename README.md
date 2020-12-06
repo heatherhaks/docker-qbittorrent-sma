@@ -45,4 +45,4 @@ ffprobe = /usr/bin/ffprobe
 
 You may also want to change the permissions in the `[Permissions]` section to allow your other apps, such as Sonarr/Radarr, to access them.
 
-Finally, in the `qBittorrent` section, set the `host` setting to `localhost`. Input your qBittorrent Web UI username and password in the appropriate places. Finally, set the output-directory to wherever you set qBittorrent to store completed downloads.
+Finally, in the `qBittorrent` section, set the `host` setting to `localhost`. Input your qBittorrent Web UI username and password in the appropriate places. Finally, set the output-directory to wherever you set qBittorrent to store completed downloads. Remember to set the various apps you may use to use whatever label you use in this setting corresponding with the app. For example, if using the default setting for radarr in this section, the label should be `radarr`, so within Radarr when you add qBittorrent as a download client be sure to set the label to `radarr`.
