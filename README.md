@@ -18,7 +18,7 @@ services:
     volumes:
       - /mnt/storage/config/qbittorrent:/config #the location of qbittorrent's config files
       - /mnt/storage/downloads/complete:/downloads/complete #the location where you want to store your downloads
-      - /mnt/storage/config/sma/config:/mp4automator/config #the location of autoProcess.ini
+      - /mnt/storage/config/sma:/mp4automator #the location of sickbeard mp4 automator
     ports:
       - 6881:6881
       - 6881:6881/udp
@@ -34,7 +34,7 @@ Now would also be a good time to change  your webui password in the Web UI tab.
 
 It stumped me for a while so I've decided to note it here for others to learn from. Sonarr/Radarr only delete torrents when the torrent stops seeding, regardless of settings inside Sonarr/Radarr. As such, you should set qBittorrent's seeding settings according to your needs in file management.
 
-Now, configure your autoProcess.ini. You can grab a default copy from the github for sickbeard mp4 automator, in the config folder. Rename it so the extension is `.ini` and not `.sample`
+Now, configure your autoProcess.ini.
 
 In the section `[Converter]`, configure the following settings precisely as given here:
 
